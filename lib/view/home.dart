@@ -1,4 +1,4 @@
-import 'package:last_project/view/penyakit1.dart';
+
 import 'package:flutter/material.dart';
 
 
@@ -27,7 +27,9 @@ class home extends StatefulWidget {
 class _HomeScreenState extends State<home> {
   List<String> items = [];
 
+
   TextEditingController _textEditingController = TextEditingController();
+  
 
   @override
   void dispose() {
@@ -121,7 +123,7 @@ class _HomeScreenState extends State<home> {
             context: context,
             builder: (context) {
               return AlertDialog(
-                title: Text('Add Item'),
+                title: Text('Tambah Judul'),
                 content: TextField(
                   controller: _textEditingController,
                 ),
@@ -146,5 +148,9 @@ class _HomeScreenState extends State<home> {
             },
           );
         },
+      ),
+    );
+  }
+}
 
         

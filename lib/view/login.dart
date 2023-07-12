@@ -13,12 +13,14 @@ class Login extends StatelessWidget {
 
     if (username.isNotEmpty && password.isNotEmpty) {
       final user = await dbhelper.instance.getUser(username);
+
       if (user.isNotEmpty && user['password'] == password) {
         Navigator.push(
           context,
           MaterialPageRoute(builder: (context) => home()),
         );
-      } else {
+      } 
+       else {
         _showDialog(context, 'Invalid username or password!');
       }
     } else {
