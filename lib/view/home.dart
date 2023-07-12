@@ -1,4 +1,6 @@
+import 'package:last_project/view/penyakit1.dart';
 import 'package:flutter/material.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -144,7 +146,5 @@ class _HomeScreenState extends State<home> {
             },
           );
         },
-      ),
-    );
-  }
-}
+=======
+        
