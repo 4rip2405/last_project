@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'CRUD Example',
+      title: 'Wabah penyakit yang ada didunia',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -61,18 +61,18 @@ class _HomeScreenState extends State<home> {
             TextEditingController(text: items[index]);
 
         return AlertDialog(
-          title: Text('Edit Item'),
+          title: Text('Edit Berita'),
           content: TextField(controller: editController),
           actions: <Widget>[
             TextButton(
-              child: Text('Save'),
+              child: Text('Simpan'),
               onPressed: () {
                 updateItem(index, editController.text);
                 Navigator.of(context).pop();
               },
             ),
             TextButton(
-              child: Text('Cancel'),
+              child: Text('Batal'),
               onPressed: () {
                 Navigator.of(context).pop();
               },
@@ -87,7 +87,7 @@ class _HomeScreenState extends State<home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('CRUD Example'),
+        title: Text('Wabah penyakit yang ada didunia'),
       ),
       body: ListView.builder(
         itemCount: items.length,
@@ -135,7 +135,7 @@ class _HomeScreenState extends State<home> {
                     },
                   ),
                   TextButton(
-                    child: Text('Cancel'),
+                    child: Text('Batal'),
                     onPressed: () {
                       _textEditingController.clear();
                       Navigator.of(context).pop();
@@ -146,5 +146,5 @@ class _HomeScreenState extends State<home> {
             },
           );
         },
-=======
+
         
