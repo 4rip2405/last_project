@@ -16,7 +16,7 @@ class Login extends StatelessWidget {
       if (user.isNotEmpty && user['password'] == password) {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => homee()),
+          MaterialPageRoute(builder: (context) => home()),
         );
       } else {
         _showDialog(context, 'Invalid username or password!');
@@ -66,7 +66,7 @@ class Login extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                'assets/images/logo.png',
+                'assets/images/virus.png',
                 height: 120,
               ),
               SizedBox(height: 20.0),
